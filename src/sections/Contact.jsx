@@ -8,11 +8,11 @@ const Contact = () => {
   const text = `Got a question, how or project Idea?
     WE’D love to hear from you and discus further!`;
   const items = [
+    "Your vision - my code",
     "just imagin, I code",
+    "Your vision - my code",
     "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
+    "Your vision - my code",
   ];
   useGSAP(() => {
     gsap.from(".social-link", {
@@ -34,7 +34,7 @@ const Contact = () => {
     >
       <div>
         <AnimatedHeaderSection
-          subTitle={"You Dream It, I Code it"}
+          subTitle={"Code that speaks. Design that connects."}
           title={"Contact"}
           text={text}
           textColor={"text-white"}
@@ -46,14 +46,14 @@ const Contact = () => {
               <h2>E-mail</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                JohnDoe@gmail.com
+                surajrp.work@gmail.com
               </p>
             </div>
             <div className="social-link">
               <h2>Phone</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl lowercase md:text-2xl lg:text-3xl">
-                +33 7 12 12 32 12
+                +91 9353598197
               </p>
             </div>
             <div className="social-link">
@@ -66,9 +66,8 @@ const Contact = () => {
                     href={social.href}
                     className="text-xs leading-loose tracking-wides uppercase md:text-sm hover:text-white/80 transition-colors duration-200"
                   >
-                    {"{ "}
+                    {"• "}
                     {social.name}
-                    {" }"}
                   </a>
                 ))}
               </div>
