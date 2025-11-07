@@ -1,4 +1,3 @@
-// index.js
 export const badgeData = [
   {
     title: "COHORT 1.0",
@@ -30,7 +29,11 @@ export const badgeData = [
     items: [
       {
         title: "Job Ready Hackathon",
-        description: "(React, Router, GSAP)",
+        description: "(Frontend-focused Indian influencer platform)",
+      },
+      {
+        title: "Tools",
+        description: "(React, Router, GSAP, Netlify, Git)",
       },
       {
         title: "Soft Skills",
@@ -42,12 +45,13 @@ export const badgeData = [
   {
     title: "OUTSKILL",
     description:
-      "Attended the 'AI Mastermind' session hosted by Outskill to deepen my understanding of artificial intelligence.",
-      href: "https://drive.google.com/file/d/1IkGQUlBeMX9ZAIZDXJLOnT9OCfeF1TR_/view?usp=drive_link",
+      "Attended the ‘AI Mastermind’ session by Outskill, gaining insights into the fundamentals and real-world applications of artificial intelligence.",
+    href: "https://drive.google.com/file/d/1IkGQUlBeMX9ZAIZDXJLOnT9OCfeF1TR_/view?usp=drive_link",
     items: [
       {
         title: "AI Architectures & Domains",
-        description: "(Explored generative modeling, and reinforcement learning.)",
+        description:
+          "(Explored generative modeling, and reinforcement learning.)",
       },
       {
         title: "Agentic AI & CrewAI",
@@ -62,16 +66,20 @@ export const badgeData = [
   {
     title: "SIMPILEARN",
     description:
-      "Completed the course from Simplilearn, building a solid foundation in React.js fundamentals.",
-      href: "https://drive.google.com/file/d/1I__fLVQE_rYl9ASD4u6S7g4r4YO5iJqu/view?usp=drive_link",
+      "Completed a React.js course from Simplilearn, strengthening my skills in modern frontend and React development.",
+    href: "https://drive.google.com/file/d/1I__fLVQE_rYl9ASD4u6S7g4r4YO5iJqu/view?usp=drive_link",
     items: [
       {
         title: "React for Beginners",
-        description: "(Basic, Hooks, Routes)",
+        description: "(Basics, Hooks, Routes)",
       },
       {
         title: "Frontend Development",
-        description: "(HTML, CSS, JS)",
+        description: "(HTML, CSS, JavaScript)",
+      },
+      {
+        title: "JavaScript Essentials",
+        description: "(ES6+, DOM, Async, APIs)",
       },
     ],
   },

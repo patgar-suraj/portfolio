@@ -104,7 +104,7 @@ const Navbar = () => {
         className="fixed z-50 flex flex-col justify-between w-full h-full px-10 uppercase bg-black text-[#494949] font-bold tracking-[-0.2em] md:tracking-[-0.4em] py-28 gap-y-10 md:w-1/2 md:left-1/2"
       >
         <div className="flex flex-col text-5xl gap-y-2 md:text-6xl lg:text-8xl">
-          {["home", "project", "about", "badge", "contact"].map(
+          {["home", "badge", "about", "project", "contact"].map(
             (section, index) => (
               <div key={index} ref={(el) => (linkRef.current[index] = el)}>
                 <Link className="transition-all duration-300 cursor-pointer hover:text-white" 
@@ -154,7 +154,7 @@ const Navbar = () => {
             ? { clipPath: "circle(50% at 50% 50%" }
             : { clipPath: "circle(0% at 50% 50%" }
         }
-        className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-2xl cursor-pointer w-14 h-8 md:w-20 md:h-20 top-4 right-10"
+        className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black border-2 border-white/30 hover:border-white rounded-full cursor-pointer w-14 h-8 md:w-20 md:h-20 top-4 right-10"
       >
         <span
           ref={topLineRef}

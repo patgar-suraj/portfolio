@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `I’m focusing on sharpening my frontend skills, especially in React, and 
+  const text = `I’m focusing on sharpening my frontend skills and 
   I’m open to both office and remote opportunities where 
   I can contribute, learn, and grow as a developer.`;
   const aboutText = `Hi, I’m SURAJ PATGAR, a passionate Frontend Developer with a strong interest in creating clean, responsive, and user-friendly web experiences. I’ve completed a Full Stack Web Development course, where I gained hands-on experience building projects using HTML, CSS, JavaScript, React, and basic Node.js for backend integration.`;

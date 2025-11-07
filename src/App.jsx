@@ -3,12 +3,12 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import ReactLenis from "lenis/react";
 import About from "./sections/About";
-import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
 import Badge from "./sections/Badge";
 import BadgeSummary from "./sections/BadgeSummary";
+import Project from "./sections/Project";
 
 const App = () => {
   const { progress } = useProgress();
@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto">
-      {!isReady && (
+      {/* {!isReady && (
         <div className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light">
           <p className="mb-4 text-xl tracking-widest animate-pulse">
             Loading {Math.floor(progress)}%
@@ -34,18 +34,18 @@ const App = () => {
             ></div>
           </div>
         </div>
-      )}
+      )} */}
       <div
-        className={`${
-          isReady ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-1000`}
+      // className={`${
+      //   isReady ? "opacity-100" : "opacity-0"
+      // } transition-opacity duration-1000`}
       >
         <Navbar />
         <Hero />
         <BadgeSummary />
         <Badge />
         <About />
-        <Works />
+        <Project />
         <ContactSummary />
         <Contact />
       </div>

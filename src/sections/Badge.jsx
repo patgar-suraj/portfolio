@@ -26,13 +26,13 @@ const Badge = () => {
   return (
     <section id="badge" className="min-h-screen bg-black rounded-t-4xl">
       <AnimatedHeaderSection
-        subTitle={"Behind the scene, Beyond the screen"}
+        subTitle={"Each Certificate, A Step Forward"}
         title={"Badge"}
         text={text}
         textColor={"text-white"}
         withScrollTrigger={true}
       />
-      {badgeData.map((service, index) => (
+      {badgeData.map((badge, index) => (
         <div
           ref={(el) => (badgeRefs.current[index] = el)}
           key={index}
@@ -47,20 +47,20 @@ const Badge = () => {
           }
         >
           <div className="flex items-center justify-between gap-4 font-light">
-            <div className="flex flex-col gap-6">
-              <h2 className="text-4xl lg:text-5xl">{service.title}</h2>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-4xl lg:text-5xl">{badge.title}</h2>
               <p className="text-xl leading-relaxed tracking-widest lg:text-2xl text-white/60 text-pretty">
-                {service.description}
+                {badge.description}
               </p>
               <a
-                href={service.href}
-                className="px-2 bg-white rounded text-black"
+                onClick={() => window.open(badge.href, "_blank")}
+                className="px-2 bg-white rounded text-black cursor-pointer"
               >
                 View Certificate <span className="text-2xl">↗</span>
               </a>
 
               <div className="flex flex-col gap-2 text-2xl sm:gap-4 lg:text-3xl text-white/80">
-                {service.items.map((item, itemIndex) => (
+                {badge.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`}>
                     <h3 className="flex">
                       <span className="mr-12 text-lg text-white/30">
@@ -72,7 +72,7 @@ const Badge = () => {
                       {item.description}
                     </p>
 
-                    {itemIndex < service.items.length - 1 && (
+                    {itemIndex < badge.items.length - 1 && (
                       <div className="w-full h-px my-2 bg-white/30" />
                     )}
                   </div>
