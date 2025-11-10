@@ -33,6 +33,7 @@ const Contact = () => {
       id="contact"
       className="flex flex-col justify-between min-h-screen bg-black"
     >
+      
       <div>
         <AnimatedHeaderSection
           subTitle={"Code that speaks. Design that connects."}

@@ -26,7 +26,7 @@ const Badge = () => {
     });
   }, []);
   return (
-    <section id="badge" className="min-h-screen bg-black rounded-t-4xl">
+    <section id="badge" className="relative min-h-screen bg-black rounded-t-4xl">
       <AnimatedHeaderSection
         subTitle={"Each Certificate, A Step Forward"}
         title={"Badge"}

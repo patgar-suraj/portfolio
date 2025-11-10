@@ -11,14 +11,14 @@ import BadgeSummary from "./sections/BadgeSummary";
 import Project from "./sections/Project";
 
 const App = () => {
-  const { progress } = useProgress();
-  const [isReady, setIsReady] = useState(false);
+  // const { progress } = useProgress();
+  // const [isReady, setIsReady] = useState(false);
 
-  useEffect(() => {
-    if (progress === 100) {
-      setIsReady(true);
-    }
-  }, [progress]);
+  // useEffect(() => {
+  //   if (progress === 100) {
+  //     setIsReady(true);
+  //   }
+  // }, [progress]);
 
   return (
     <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto">

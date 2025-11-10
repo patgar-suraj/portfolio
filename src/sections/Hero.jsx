@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, Suspense } from "react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import "../style/hero.css"
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -39,19 +40,23 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="relative bg-black flex flex-col rounded-b-4xl justify-end min-h-screen overflow-hidden"
+      className="relative  flex flex-col justify-end min-h-screen overflow-hidden"
     >
+<div class="container"></div>
+
+
+
       {/* 3d object */}
-      {!prefersReducedMotion && show3D && (
+      {/* {!prefersReducedMotion && show3D && (
         <Suspense fallback={null}>
           <Spline
             className="absolute bottom-0 left-0 w-full h-full"
             scene={splineScene}
           />
         </Suspense>
-      )}
+      )} */}
       {/* hide logo */}
-      <div className="absolute rounded-b-4xl bottom-0 left-0 w-full h-[90px] bg-gradient-to-b from-transparent via-black to-black z-10"></div>
+      {/* <div className="absolute rounded-b-4xl bottom-0 left-0 w-full h-[90px] bg-gradient-to-b from-transparent via-black to-black z-10"></div> */}
 
       {/* social media */}
       <div className="relative z-20 px-10 flex items-center justify-start gap-2">
