@@ -3,6 +3,7 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import Marquee from "../components/Marquee";
 import { socials } from "../constants";
 import gsap from "gsap";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Contact = () => {
   const text = `Got a question, how or project Idea?
@@ -43,21 +44,21 @@ const Contact = () => {
         <div className="flex px-10 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none mb-10">
           <div className="flex flex-col w-full gap-10">
             <div className="social-link">
-              <h2 className="text-white/50">E-mail</h2>
+              <h2 className="text-white/50 flex items-center gap-2 cursor-default">E-mail <Icon icon="line-md:email" width="24" height="24" /></h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
                 surajrp.work@gmail.com
               </p>
             </div>
             <div className="social-link">
-              <h2 className="text-white/50">Phone</h2>
+              <h2 className="text-white/50 flex items-center gap-2 cursor-default">Phone <Icon icon="line-md:phone-call-loop" width="24" height="24" /></h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl lowercase md:text-2xl lg:text-3xl">
                 +91 9353598197
               </p>
             </div>
             <div className="social-link">
-              <h2 className="text-white/50">Social Media</h2>
+              <h2 className="text-white/50 flex items-center gap-2 cursor-default">Social Media <Icon icon="line-md:emoji-smile-wink" width="24" height="24" /></h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <div className="flex flex-wrap gap-2">
                 {socials.map((social, index) => (

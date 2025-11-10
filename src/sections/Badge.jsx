@@ -5,7 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Badge = () => {
-  const text = `These certificates represent my specialized expertise in full-stack architecture, rapid innovation from hackathon challenges, and the strategic implementation of artificial intelligence.`;
+  const text = `These certificates represent my specialized expertise in full-stack 
+  architecture, rapid innovation from hackathon challenges, and the 
+  strategic implementation of artificial intelligence.`;
   const badgeRefs = useRef([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" }); //768px
   useGSAP(() => {
